@@ -6,7 +6,7 @@ titanic.test <- read.csv(file = "test.csv", stringsAsFactors = FALSE, header = T
 titanic.train$IsTrainSet <- TRUE
 titanic.test$IsTrainSet <- FALSE
 
-titanic.test$Survived <-NA
+titanic.test$Survived <-NA 
 titanic.full <- rbind(titanic.train,titanic.test)
 titanic.full[titanic.full$Embarked=='', "Embarked"] <- ''
 
